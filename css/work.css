@@ -12,6 +12,12 @@ div.intro-img-box {
   padding: 48px 104px;
 }
 
+.intro-img {
+  width: 270px;
+  height: 540px;
+  position: relative;
+}
+
 .p-spaced {
   line-height: 46px;
 }
@@ -50,11 +56,13 @@ p strong {
   div.intro-img-box {
     background-color: #000000;
     border-radius: 25px;
-    padding: 40px 80px;
+    padding: 40px 70px;
   }
 
-  div.intro-img-box img {
-    width: 200px;
+    .intro-img {
+      width: 230px;
+      height: 460px;
+      position: relative;
   }
 
   .row {
@@ -147,10 +155,19 @@ p strong {
 }
 
 @media (max-width: 375px) {
+
+  .intro-container {
+    padding: 48px 20px;
+  }
+
   .header-center-med-lg {
     margin-top: 120px;
     margin-bottom: 8px;
-    font-size: 38px;
+    font-size: 30px;
+  }
+
+  .header-center-md-intro  {
+    font-size: 20px;
   }
 
   div.intro-img-box {
@@ -158,8 +175,10 @@ p strong {
     border-radius: 25px;
     padding: 30px 50px;
   }
-
-  div.intro-img-box img {
-    width: 180px;
+  .intro-img {
+    width: 200px;
+    height: 400px;
+    position: relative;
   }
+
 }
