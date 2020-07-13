@@ -125,18 +125,30 @@
     </footer>
     <img src="./assets/compressed/background-home-resized-small-2.webp" style="display:none;" alt="" />
     <script>
+
       var prevScrollpos = window.pageYOffset;
+
       setTimeout(function () {
+
         window.onscroll = function() {
+
           var currentScrollPos = window.pageYOffset;
+
           if (prevScrollpos > currentScrollPos) {
+
             document.getElementById("navbar").style.top = "0";
+
           } else {
+
             document.getElementById("navbar").style.top = "-160px";
+
           }
+
           prevScrollpos = currentScrollPos;
+
         }
-      }, 1000)
+
+      }, 2000)
     </script>
   </body>
 </html>
