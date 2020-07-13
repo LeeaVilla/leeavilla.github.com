@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <nav>
+    <nav id="navbar">
       <section id="nav-logo-wrapper">
         <p id="nav-logo-text">LEEA VILLATORO</p>
       </section>
@@ -123,5 +123,19 @@
       </h4>
     </footer>
     <img src="./assets/compressed/background-home-resized-small-2.webp" style="display:none;" alt="" />
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      setTimeout(function () {
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-160px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+      }, 1000)
+    </script>
   </body>
 </html>

@@ -96,7 +96,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 48px 40px 24px 40px;
-  /* padding: 20px 12px 12px 12px; */
+    top: 0; /* Stay on top */
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
 }
 
 #nav-logo-wrapper {
